@@ -1,0 +1,2 @@
+Imagen elegida: image6.png
+Etiquetas detectadas: ['person', 'car', 'person', 'person', 'car', 'motorcycle', 'person', 'person', 'person', 'person', 'umbrella', 'umbrella', 'person', 'motorcycle', 'motorcycle', 'umbrella']

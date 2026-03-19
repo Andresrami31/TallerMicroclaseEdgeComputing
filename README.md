@@ -31,8 +31,9 @@ Imagen elegida: image1.jpeg
 Etiquetas detectadas: ['car', 'person', 'traffic light']
 
 ## Integrantes
-- Nombre 1
-- Nombre 2
+- Niny Johana Parra Garcia
+- Brayan Vargas Vargas
+- Andres Ramirez Vasquez
 
 ## Lo que entregan en el fork
 taller/</br>

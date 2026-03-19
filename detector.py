@@ -9,14 +9,13 @@ imagen = sys.argv[1]
 resultados = modelo(imagen)
 
 lineas = []
+etiquetas = []
 
-# ─────────────────────────────────────────
-# TU CÓDIGO VA AQUÍ
-# El archivo resultados.txt debe quedar así:
-#
-# Imagen elegida: image1.jpeg
-# Etiquetas detectadas: ['car', 'person', 'bus']
-# ─────────────────────────────────────────
+for resultado in resultados:
+    etiquetas = resultado.boxes.cls.cpu().numpy().tolist()
+    etiquetas = [modelo.names[int(etiqueta)] for etiqueta in etiquetas]
+    lineas.append(f"Imagen elegida: {imagen}\n")
+    lineas.append(f"Etiquetas detectadas: {etiquetas}\n")
 
 # Guardar — no modificar
 with open("resultados.txt", "w", encoding="utf-8") as f:
